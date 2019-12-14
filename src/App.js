@@ -48,7 +48,9 @@ class App extends React.Component{
  render(){
 
  return (
-  <>
+  <div className='grid'>
+    <div className='mainWindow'>
+      <div className='weatherFetchContent'>
    <Titles/>
     <Form getWeather={this.getWeather}/>
     <Weather 
@@ -59,7 +61,9 @@ class App extends React.Component{
       description={this.state.description}
       error={this.state.error}
     />
-  </>
+      </div>
+    </div>
+  </div>
   )
 }}
 
