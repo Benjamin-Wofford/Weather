@@ -50,6 +50,7 @@ class App extends React.Component{
  return (
   <div className='grid'>
     <div className='mainWindow'>
+      <div className='mainVisual'/>
       <div className='weatherFetchContent'>
    <Titles/>
     <Form getWeather={this.getWeather}/>
