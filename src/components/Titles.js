@@ -7,7 +7,7 @@ class Titles extends React.Component {
         return(
             <>
                 <h1>Weather Finder</h1>
-                <p>Find out weather, conditions, and more..</p>
+                <p className="secondSentence">Find out weather, conditions, and more..</p>
             </>
         )
     }
