@@ -1,13 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
 body,html {
   height: 100%;
   margin: 0;
   background: rgb(34,193,195);
   background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
-  font-family: 'Lilita One', cursive;
+  font-family: 'Poppins', sans-serif;
 }
 
 h1 {
-  font-size: 10vh;
+  font-size: 8vh;
   color: white;
   margin: 0;
   margin-top: 2vw;
@@ -48,7 +50,7 @@ select {
 button {
   border: 0;
   padding: 8px 20px;
-  margin: 0 2px;
+  margin-bottom: auto;
   border-radius: 2px;
   font-weight: lighter;
   letter-spacing: 1px;
@@ -97,6 +99,7 @@ form {
 .mainWindow {
   background-color: white;
   border-radius: 20px;
+  border-top-right-radius: 20px;
   grid-row-start: 2;
   grid-row-end: 3;
   grid-column-start: 2;
@@ -110,6 +113,8 @@ form {
 }
 
 .weatherFetchContent {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
   display: flex; 
   flex-direction: column;
   flex-wrap: wrap;
