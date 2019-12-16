@@ -21,10 +21,9 @@ class App extends React.Component{
     e.preventDefault()
     const city = e.target.elements.city.value
     const country = e.target.elements.country.value
-    const api_call = await fetch(`http://api.openweathermap.org/data/2.5/find?q=${city},${country}&appid=${API_KEY}&units=imperial`)
+    const api_call = await fetch(`https://api.openweathermap.org/data/2.5/find?q=${city},${country}&appid=${API_KEY}&units=imperial`)
     const data = await api_call.json();
     if (city && country && data.count !== 0){
-    console.log(data)
     this.setState({
       temperature: data.list[0].main.temp,
       city: data.list[0].name,
