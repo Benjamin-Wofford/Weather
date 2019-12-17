@@ -4,7 +4,6 @@ body,html {
   height: 100%;
   margin: 0;
   background: rgb(34,193,195);
-  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
   font-family: 'Poppins', sans-serif;
 }
 
@@ -112,6 +111,7 @@ form {
   box-shadow: 10px 10px 18px black;
 }
 
+
 .weatherFetchContent {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -135,4 +135,44 @@ form {
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 20px 0px 0px 20px;
+}
+
+@media screen and (max-width: 1050px) and (max-height: 1367px) {
+
+  .secondSentence {
+    padding: 0px;
+    font-size: 2.0vh;
+  }
+
+  #cityInput{
+    width: 65%;
+  }
+  
+  select {
+    width: 65%;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+  font-size: 5vh;
+  }
+  .mainWindow {
+    grid-template-columns: 1fr;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+
+  .weatherFetchContent{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+    
 }

@@ -4,10 +4,10 @@ class Form extends React.Component{
     render(){
         return(
             <form onSubmit={this.props.getWeather}>
-                <input type='text' name='city' placeholder='City..'/>     
+                <input id='cityInput' type='text' name='city' placeholder='City..'/>     
         
             <select id="country" name="country" class="form-control">
-                <option value="USA">Select a country</option>
+                <option value="USA">Country..</option>
                 <option value="Afghanistan">Afghanistan</option>
                 <option value="Åland Islands">Åland Islands</option>
                 <option value="Albania">Albania</option>
